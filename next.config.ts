@@ -64,6 +64,11 @@ const SECURITY_HEADERS = [
 ] as const;
 
 const nextConfig: NextConfig = {
+  // Emits a self-contained `.next/standalone` build (server + only the
+  // node_modules it actually needs) so the Docker image doesn't have to
+  // ship the full node_modules tree. See Dockerfile.
+  output: "standalone",
+
   /**
    * Cross-origin dev access (Next.js 16).
    *

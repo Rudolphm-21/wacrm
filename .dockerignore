@@ -1,0 +1,31 @@
+node_modules
+.next
+out
+.git
+.github
+.claude
+.vscode
+
+# app env files — provide these via Easypanel env vars / build args instead
+.env
+.env*
+!.env.local.example
+!.env.example
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+coverage
+*.tsbuildinfo
+
+docs
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+
+# separate package, not part of the web app image
+mcp-server
+
+supabase
