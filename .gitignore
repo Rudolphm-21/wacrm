@@ -39,6 +39,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local MCP config (contains secrets like EASYPANEL_TOKEN)
+.mcp.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
